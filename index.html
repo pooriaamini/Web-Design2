@@ -1,0 +1,816 @@
+<!DOCTYPE html >
+<html style="height: 100%;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/glide.core.min.css">
+    <link rel="stylesheet" href="style/glide.theme.min.css">
+
+    <title>Elito - Creative Portfolio HTML5 Template</title>
+</head>
+
+<body id="body">
+
+
+    <div id="scroll" class=" scroll hidden" style="position: fixed; bottom: 1.5rem; right: 1rem;">
+        <button id="scrollbtn" class="px-4 py-3 rounded-[50%]   "
+            style=" z-index: 10000;background-color: rgba(89, 195, 120, 0.7); border: solid 1px #59C378; transition: all .3s; ">
+            <i class="bi bi-arrow-up text-white"></i></button>
+    </div>
+
+    <header id="header" class="header flex justify-between items-center px-3 xl:px-20 py-4 bg-white  "
+        style="box-shadow: 0 -5px 15px #086ad84a;">
+
+        <div class="navigation lg:hidden xl:hidden 2xl:hidden">
+            <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation-button ">
+                <span class="navigation-icon">
+
+
+
+
+                </span>
+            </label>
+            <div class="navigation-background">
+
+            </div>
+
+            <nav class="navigation-nav">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">Home <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">About <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">Service <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">Portfolio <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">Blog <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+                    <li class="navigation-item"><a href=""
+                            class="navigation-link flex justify-between items-center">Contact <i
+                                class="bi bi-arrow-right-short"></i></a></li>
+
+
+
+                </ul>
+
+            </nav>
+
+        </div>
+        <ul class="list0 ">
+            <li class="flex items-center gap-3 ">
+                <a href=""><img src="img/logo.png" class="w-16" alt=""></a>
+                <a class="tag text-2xl xl:text-4xl   " href="">Elito.</a>
+            </li>
+        </ul>
+        <ul class="list1 lg:me-10 hidden lg:block ">
+            <li class="item flex gap-8">
+                <a class=" tag tag1 relative " href="">home</a>
+                
+                <a class="tag tag2 relative" href="">about</a>
+                <div class="absolute opacity-0 left-[30rem] bg-black text-white top-[5rem]  py-4 pr-10 pl-4 rounded-sm" style="transition: all .3s;" >
+                    <p class="mt-2">Service</p>
+                    <p class="mt-2">Service Single</p>
+
+                </div>
+                <a class="tag tag3 relative" href="">service</a>
+                <div class="absolute opacity-0  left-[35rem] bg-black text-white top-[5rem]  py-4 pr-10 pl-4 rounded-sm" style="transition: all .3s;" >
+                    <p class="mt-2">Main Home</p>
+                    <p class="mt-2">Main Style2</p>
+                    <p class="mt-2">Main Style3</p>
+
+                </div>
+                <a class="tag tag4 relative" href="">portfolio</a>
+                 <div class="absolute opacity-0 left-[40rem] bg-black text-white top-[5rem]  py-4 pr-10 pl-4 rounded-sm" style="transition: all .3s;" >
+                    <p class="mt-2">Portfolio</p>
+                    <p class="mt-2">Portfolio Slide</p>
+                    <p class="mt-2">Portfolio Single</p>
+
+                </div>
+                <a class="tag tag5 relative" href="">blog</a>
+                <div class="absolute opacity-0  bg-black left-[45rem] text-white top-[5rem]  py-4 pr-10 pl-4 rounded-sm" style="transition: all .3s;" >
+                    <p class="mt-2">Blog left</p>
+                    <p class="mt-2">Blog right</p>
+                    <p class="mt-2">Blog fullweight</p>
+                    <p class="mt-2">Blog detail</p>
+
+
+                </div>
+                <a class="tag tag6 relative" href="">contact</a>
+                
+
+
+            </li>
+
+        </ul>
+
+        <ul>
+            <li class="list2 btn2">
+                <a class="tag lg:py-4 lg:px-7 py-3 px-5 " href="">Resume <i class="bi bi-arrow-down"></i> </a>
+
+            </li>
+        </ul>
+    </header>
+    <script>
+        document.getElementById('header').addEventListener('wheel', function (e) {
+            // document.getElementById('header').style.height='0'
+            // document.getElementById('header').style.display='none'
+
+
+        })
+    </script>
+    <div
+        class="main flex flex-col-reverse  lg:flex lg:justify-between lg:flex-row-reverse lg:px-20 mt-5 lg:mt-10 gap-10">
+        <div class="main-img  flex justify-center">
+            <img src="img/1.jpg " class="w-[60%] lg:w-[100%] " alt="">
+        </div>
+        <div class="main-text   text-center lg:text-start">
+            <h1 class="lg:text-[3.5rem] text-[2rem]">
+                Hello,
+
+            </h1>
+            <h2 class="lg:text-[4rem] text-[2.25rem]">
+                I Am Ronald.
+
+            </h2>
+            <p class="p1 lg:text-[2rem] text-[1rem]">
+                UI/UX Designer
+
+            </p>
+            <p class="p2 lg:text-[1.25rem] text-[1.25rem] mb-10 px-10 lg:px-0 text-[#585858]">
+                Must explain to how all this mistaken idea denouncing pleasure pain the system and expound the actua.
+            </p>
+            <a class="bg-[#59C378] hover:bg-[#2e984e]  px-10 py-4 rounded-full text-white " style="transition: all .5s;"
+                href="">Hire Me <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
+
+    </div>
+    <div
+        class="container1 flex flex-col lg:flex lg:flex-row lg:justify-between lg:px-16 bg-[#f8f8f8] mt-10 lg:gap-32 gap-10  lg:items-start">
+        <div class="card mt-16 bg-white px-16 flex w-[55%] lg:w-[25%] ms-20 flex-col justify-center items-center rounded-[10px]"
+            style="    box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
+    ">
+            <h1 class="text-[10rem]   text-[#dfca08]" style="font-weight: 700;">08</h1>
+            <p class="text-[1.25rem] text-[#585858]"> Years of Experience
+            </p>
+            <div class="btn-card flex gap-5 items-center mb-10 p-3 rounded-[10px] mt-5 px-5 translate-x-[100px] lg:translate-x-[170px]"
+                style="    box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%) ;
+        ">
+                <p class="text-[2.5rem] text-[#59C378]" style="font-weight: bold;">100%</p>
+                <p>
+                    Clients Satisfections
+                </p>
+
+            </div>
+        </div>
+        <div class="text lg:mt-16 ms-20">
+            <p class="p3 text-[#202020]  text-[2rem] lg:text-[3.5rem] " style="font-weight: 600;">My Advantage
+            </p>
+            <p class="p4 text-[#888888] pr-10 mt-5">
+                Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+                will give you a complete account the system and expound the actual and praising pain was born.
+            </p>
+            <div class="cardd grid grid-cols-3 gap-10 mt-8 mb-16 ">
+                <div class="card  w-[20vw] lg:w-[12vw] rounded-[10px]"
+                    style="background: linear-gradient(180deg, rgba(255, 230, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%);">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#dfca08] pb-8 text-center">Figma</p>
+                </div>
+                <div class="card  w-[20vw] lg:w-[12vw] rounded-[10px]"
+                    style="background: linear-gradient(180deg, rgba(89, 195, 120, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%)">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#59C378] pb-8 text-center">Sketch</p>
+                </div>
+                <div class="card  w-[20vw] lg:w-[12vw] rounded-[10px]"
+                    style="background:linear-gradient(180deg, rgba(221, 88, 79, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%)">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#DD584F] pb-8 text-center">Photoshop</p>
+                </div>
+                <div class="card   w-[20vw] lg:w-[12vw] rounded-[10px]"
+                    style="background: linear-gradient(180deg, rgba(255, 154, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%);">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#FF9A00] pb-8 text-center">Illustrator</p>
+                </div>
+                <div class="card   w-[20vw] lg:w-[12vw] rounded-[10px]"
+                    style="background: linear-gradient(180deg, rgba(0, 169, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%)">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#00A9FF] pb-8 text-center">WordPress</p>
+                </div>
+                <div class="card   w-[20vw] lg:w-[12vw] rounded-[10px] "
+                    style="background:linear-gradient(180deg, rgba(158, 0, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 67.59%) ">
+                    <p class="bg-white mt-1 mx-1 text-center text-[2rem] pt-5" style="font-weight: 700;">98%</p>
+                    <p class="bg-white rounded-[5px] text-[#AD00FF] text-center pb-8">ReactJS</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container2 mb-16 bg-[#fffbfb]">
+        <div class="text flex flex-col items-center mt-5 xl:mt-10 ">
+            <p class="text-[3.5rem] mb-5" style="font-weight: 700;">
+                Popular Services
+
+            </p>
+            <p class="text-[#888888] text-[1.25rem] px-10 text-center">
+                Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete
+                account the system
+
+
+            </p>
+        </div>
+        <div class="slide-btn  flex justify-center gap-10 ">
+            <div><a class="px-6 py-3 text-[1rem] lg:text-[1.5rem] hover:bg-white hover:text-[#59C378]  "
+                    style="transition: all .5s;" href="">Development</a></div>
+            <div><a class="px-6 py-3 text-[1rem] lg:text-[1.5rem]  hover:bg-white hover:text-[#59C378]"
+                    style="transition: all .5s;" href="">Design</a></div>
+            <div><a class="px-6 py-3 text-[1rem] lg:text-[1.5rem]  hover:bg-white hover:text-[#59C378]"
+                    style="transition: all .5s;" href="">Marketing</a></div>
+        </div>
+
+        <div class="main-card grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 gap-10 justify-between mt-16">
+            <div class="card px-12 py-8 bg-slate-300 rounded-md text-center  ">
+                <div class="mt-6 mb-12 "><i
+                        class="bi bi-ui-checks-grid text-6xl  bg-white  px-10 py-7 rounded-[50%]"></i></div>
+                <p class="text-[1.5rem] " style="font-weight: 600;">
+                    Graphic Design
+                </p>
+                <p class="mt-5">
+                    Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account
+                    the system.
+                </p>
+                <div class="mt-5 flex flex-row-reverse hover:text-[#dfca08] hover:gap-1 items-center gap-5 justify-center  "
+                    style="transition: all .5s;"><a class="  " style="transition: all .5s;" href=""> Learn More</a>
+                    <div>
+                        <i class="bi bi-arrow-right " style="transition: all .5s;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card px-12 py-8 bg-slate-300 rounded-md text-center ">
+                <div class="mt-6 mb-12"><i class="bi bi-ui-checks-grid text-6xl bg-white px-10 py-7 rounded-[50%]"></i>
+                </div>
+                <p class="text-[1.5rem] " style="font-weight: 600;">
+                    Brand Identity
+                </p>
+                <p class="mt-5">
+                    Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account
+                    the system.
+                </p>
+                <div class="mt-5 flex flex-row-reverse hover:text-[#dfca08] hover:gap-1 items-center gap-5 justify-center  "
+                    style="transition: all .5s;"><a class="  " style="transition: all .5s;" href=""> Learn More</a>
+                    <div>
+                        <i class="bi bi-arrow-right " style="transition: all .5s;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card px-12 py-8 bg-slate-300 rounded-md text-center ">
+                <div class="mt-6 mb-12"><i class="bi bi-ui-checks-grid text-6xl  bg-white px-10 py-7 rounded-[50%]"></i>
+                </div>
+                <p class="text-[1.5rem] " style="font-weight: 600;">
+                    UI/UX Design
+                </p>
+                <p class="mt-5">
+                    Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account
+                    the system.
+                </p>
+                <div class="mt-5 flex flex-row-reverse hover:text-[#dfca08] hover:gap-1 items-center gap-5 justify-center  "
+                    style="transition: all .5s;"><a class="  " style="transition: all .5s;" href=""> Learn More</a>
+                    <div>
+                        <i class="bi bi-arrow-right " style="transition: all .5s;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3 mt-5  lg:mt-10">
+            <div class="flex flex-col items-center">
+                <p class="text-[3rem] mt-10 " style="font-weight: bold;">
+                    My Work Experience
+                </p>
+                <p class="text-[#888888] mt-4 text-center">
+                    Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete
+                    account the system
+
+
+                </p>
+            </div>
+
+            <div class="card px-12 mt-10 ">
+                <div class="bg-white flex gap-5 flex-col lg:flex-row justify-center items-center  rounded-md py-5     px-28"
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
+        ">
+                    <p class="lg:me-auto  text-center text-[1.25rem] lg:text-[2rem]" style="font-weight: bold;">
+                        2015 - 2016
+                    </p>
+                    <img src="img/2.png" class="lg:me-auto" alt="">
+                    <div class="text-center lg:text-start">
+                        <p class="text-[1.5rem]" style="font-weight: bold;">Junior Visual Designer
+                        </p>
+                        <p class="text-[#DD584F]">
+                            Trapeza Group, USA.
+                        </p>
+                    </div>
+                    <a class="lg:ms-auto hover:text-[#dfca08] flex gap-6 hover:gap-3 "
+                        style="font-weight: bold;transition: all .5s "> <i class="bi bi-arrow-right  "
+                            style="transition: all .5s;"></i>
+                        Go to website</a>
+                </div>
+
+
+            </div>
+            <div class="card px-12 mt-10 ">
+                <div class="bg-white flex gap-5 flex-col lg:flex-row justify-center items-center  rounded-md py-5     px-28"
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
+        ">
+                    <p class="lg:me-auto  text-center text-[1.25rem] lg:text-[2rem]" style="font-weight: bold;">
+                        2017 - 2018
+                    </p>
+                    <img src="img/3.png" class="lg:me-auto" alt="">
+                    <div class="text-center lg:text-start">
+                        <p class="text-[1.5rem]" style="font-weight: bold;">Junior Visual Designer
+                        </p>
+                        <p class="text-[#DD584F]">
+                            Gallerie Ontario, Canada (Remote)
+                        </p>
+                    </div>
+                    <a class="lg:ms-auto hover:text-[#dfca08] flex gap-6 hover:gap-3 "
+                        style="font-weight: bold;transition: all .5s "> <i class="bi bi-arrow-right  "
+                            style="transition: all .5s;"></i>
+                        Go to website</a>
+                </div>
+
+
+            </div>
+            <div class="card px-12 mt-10 ">
+                <div class="bg-white flex gap-5 flex-col lg:flex-row justify-center items-center  rounded-md py-5     px-28"
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
+        ">
+                    <p class="lg:me-auto  text-center text-[1.25rem] lg:text-[2rem]" style="font-weight: bold;">
+                        2019 - 2020
+                    </p>
+                    <img src="img/4.png" class="lg:me-auto" alt="">
+                    <div class="text-center lg:text-start">
+                        <p class="text-[1.5rem]" style="font-weight: bold;">Junior Visual Designer
+                        </p>
+                        <p class="text-[#DD584F]">
+                            Morson Hybrid, Canada
+                        </p>
+                    </div>
+                    <a class="lg:ms-auto hover:text-[#dfca08] flex gap-6 hover:gap-3 "
+                        style="font-weight: bold;transition: all .5s "> <i class="bi bi-arrow-right  "
+                            style="transition: all .5s;"></i>
+                        Go to website</a>
+                </div>
+
+
+            </div>
+            <div class="card px-12 mt-10 ">
+                <div class="bg-white flex gap-5 flex-col lg:flex-row justify-center items-center  rounded-md py-5     px-28"
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15);
+        ">
+                    <p class="lg:me-auto  text-center text-[1.25rem] lg:text-[2rem]" style="font-weight: bold;">
+                        2015 - 2016
+                    </p>
+                    <img src="img/5.png" class="lg:me-auto" alt="">
+                    <div class="text-center lg:text-start">
+                        <p class="text-[1.5rem]" style="font-weight: bold;">Junior Visual Designer
+                        </p>
+                        <p class="text-[#DD584F]">
+                            Myant Inc. Etobicoke, ON (Remote)
+                        </p>
+                    </div>
+                    <a class="lg:ms-auto hover:text-[#dfca08] flex gap-6 hover:gap-3 "
+                        style="font-weight: bold;transition: all .5s "> <i class="bi bi-arrow-right  "
+                            style="transition: all .5s;"></i>
+                        Go to website</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="container4  mt-10 px-12 flex flex-col lg:flex-row lg:justify-between lg:items-center">
+            <div class="py-10 text">
+                <p class="text-[2.25rem] " style="font-weight: bold;">Recent Work.
+                </p>
+                <p class="text-[#888888] text-[1.25rem]">
+                    Must explain to you how all this mistaken idea pleasure born and give you a complete account.
+                </p>
+            </div>
+            <div class="icon lg:ms-auto text-center mt-10 lg:mt-0">
+                <i
+                    class="bi bi-person-raised-hand text-[2rem] px-10  py-7 rounded-[50%] bg-yellow-100 text-[#dfca08] outline-dashed outline-[#dfca08] outline-offset-8   "></i>
+            </div>
+
+            <!-- px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16 lg:mt-20 -->
+        </div>
+        <div class="container5 px-12 mt-16  ">
+            <div>
+                <div id="g1" class="glide  " style="    text-align: -webkit-center;
+                ">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="img/img-2.jpg" class="hover:scale-[1.05] " style="transition: all .5s;"
+                                    alt="">
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-8 ">Elito - Creative Portfolio HTML5
+                                    <p class=" text-[1.5rem]">Template</p>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="glide__slide"><img src="img/img-3.jpg" class="hover:scale-[1.05] "
+                                    style="transition: all .5s;" alt="">
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-8 ">Elito - Creative Portfolio HTML5
+                                    <p class=" text-[1.5rem]">Template</p>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide"><img src="img/img-4.jpg" class="hover:scale-[1.05] "
+                                    style="transition: all .5s;" alt="">
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-8 ">Elito - Creative Portfolio HTML5
+                                    <p class=" text-[1.5rem]">Template</p>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button style="border:  solid #59C378 1px;"
+                            class="glide__arrow glide__arrow--left rounded-[40%] p-4" data-glide-dir="<"><i
+                                class="bi bi-arrow-left text-[#59C378] "></i></button>
+                        <button style="border:  solid #59C378 1px;"
+                            class="glide__arrow glide__arrow--right rounded-[40%] p-4" data-glide-dir=">"><i
+                                class="bi bi-arrow-right text-[#59C378]"></i></button>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet bg-[#59C378] " data-glide-dir="=0"></button>
+                        <button class="glide__bullet bg-[#59C378]" data-glide-dir="=1"></button>
+                        <button class="glide__bullet bg-[#59C378]" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container6 bg-[#f8f8f8] mt-10 ">
+            <div class="text flex flex-col items-center py-10 ">
+                <p class="text-[2.5rem]" style="font-weight: 700;">
+                    Pricing Plan
+                </p>
+                <p class="text-[#888888] text-[1.25rem]">
+                    Must explain to you how all this mistaken idea pleasure born and give you a complete account.
+                </p>
+
+            </div>
+            <div class="card py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-10 ">
+                <div class="card-item bg-white relative rounded-[5px]  "
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15); ">
+                    <p class="absolute top-0 left-[50%] bg-[#59C378] text-white rounded-b-md py-1 px-8 text-[1.2rem]"
+                        style="transform: translateX(-50%);">
+                        BASIC
+                    </p>
+                    <div class="text text-[#888888] flex flex-col justify-center items-center gap-4">
+                        <div class="flex mt-14 gap-2 items-center">
+                            <p class=" text-[2rem] text-black" style="font-weight: bold;">$120</p>
+                            <p>
+                                / PER MONTH
+                            </p>
+                        </div>
+                        <p class="text-center ">
+                            Determine the Best Pricing Strategy <br /> Your Business.
+                        </p>
+                        <p class=" border-b-2  border-[#88888] w-[60%]"></p>
+                        <p>
+                            Softwere Development
+                        </p>
+                        <p>Web Development
+                        </p>
+                        <p>
+                            Digital Marketing
+                        </p>
+                        <p>Graphic Design
+                        </p>
+                        <p class="">24/Support
+                        </p>
+                        <a href=""
+                            class="border hover:bg-[#59C378] hover:text-white border-[#88888] text-[#59C378] py-2 px-5 mb-10 mt-3">CHOOSE
+                            PLAN</a>
+                    </div>
+
+                </div>
+
+                <div class="card-item bg-white relative rounded-[5px]  "
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15); ">
+                    <p class="absolute top-0 left-[50%] bg-[#59C378] text-white rounded-b-md py-1 px-8 text-[1.2rem]"
+                        style="transform: translateX(-50%);">
+                        PREMIUM
+                    </p>
+                    <div class="text text-[#888888] flex flex-col justify-center items-center gap-4">
+                        <div class="flex mt-14 gap-2 items-center">
+                            <p class=" text-[2rem] text-black" style="font-weight: bold;">$210</p>
+                            <p>
+                                / PER MONTH
+                            </p>
+                        </div>
+                        <p class="text-center ">
+                            Determine the Best Pricing Strategy <br /> Your Business.
+                        </p>
+                        <p class=" border-b-2  border-[#88888] w-[60%]"></p>
+                        <p>
+                            Softwere Development
+                        </p>
+                        <p>Web Development
+                        </p>
+                        <p>
+                            Digital Marketing
+                        </p>
+                        <p>Graphic Design
+                        </p>
+                        <p class="">24/Support
+                        </p>
+                        <a href=""
+                            class="border hover:bg-[#59C378] hover:text-white border-[#88888] text-[#59C378] py-2 px-5 mb-10 mt-3">CHOOSE
+                            PLAN</a>
+                    </div>
+
+                </div>
+                <div class="card-item bg-white relative rounded-[5px]  "
+                    style="box-shadow: 0px 2px 10px rgba(14, 29, 44, 0.15); ">
+                    <p class="absolute top-0 left-[50%] bg-[#59C378] text-white rounded-b-md py-1 px-8 text-[1.2rem]"
+                        style="transform: translateX(-50%);">
+                        Advanced
+                    </p>
+                    <div class="text text-[#888888] flex flex-col justify-center items-center gap-4">
+                        <div class="flex mt-14 gap-2 items-center">
+                            <p class=" text-[2rem] text-black" style="font-weight: bold;">$373</p>
+                            <p>
+                                / PER MONTH
+                            </p>
+                        </div>
+                        <p class="text-center ">
+                            Determine the Best Pricing Strategy <br /> Your Business.
+                        </p>
+                        <p class=" border-b-2  border-[#88888] w-[60%]"></p>
+                        <p>
+                            Softwere Development
+                        </p>
+                        <p>Web Development
+                        </p>
+                        <p>
+                            Digital Marketing
+                        </p>
+                        <p>Graphic Design
+                        </p>
+                        <p class="">24/Support
+                        </p>
+                        <a href=""
+                            class="border hover:bg-[#59C378] hover:text-white border-[#88888] text-[#59C378] py-2 px-5 mb-10 mt-3">CHOOSE
+                            PLAN</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container7">
+
+            <div>
+                <div id="g2" class="glide " style="    text-align: -webkit-center;
+                ">
+                    <div class="glide__track relative" data-glide-el="track">
+                        <ul class="glide__slides mt-10">
+                            <li class="glide__slide">
+                                <img src="img/11.jpg" class="hover:scale-[1.05] " style="transition: all .5s;" alt="">
+                                <div class="mt-5"><a class="bg-[#3C3C3C] py-1 px-4 text-white" href="">January 02,
+                                        2022</a></div>
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-4 ">The standard chunk of used since
+                                    <p class=" text-[1.5rem]">the interested.</p>
+                                    </p>
+                                </div>
+                                <div class="detail hover:text-[#dfca08] flex justify-center "
+                                    style="transition: all .5s;"><a href="" class="mt-3 "><i
+                                            class="bi bi-arrow-right "></i> Post Details</a></div>
+
+                            </li>
+                            <li class="glide__slide">
+                                <img src="img/12.jpg" class="hover:scale-[1.05] " style="transition: all .5s;" alt="">
+                                <div class="mt-5"><a class="bg-[#3C3C3C] py-1 px-4 text-white" href="">January 02,
+                                        2022</a></div>
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-4 ">The standard chunk of used since
+                                    <p class=" text-[1.5rem]">the interested.</p>
+                                    </p>
+
+                                </div>
+                                <div class="detail hover:text-[#dfca08] flex justify-center "
+                                    style="transition: all .5s;"><a href="" class="mt-3 "><i
+                                            class="bi bi-arrow-right "></i> Post Details</a></div>
+
+                            </li>
+
+                            <li class="glide__slide">
+                                <img src="img/10.jpg" class="hover:scale-[1.05] " style="transition: all .5s;" alt="">
+                                <div class="mt-5"><a class="bg-[#3C3C3C] py-1 px-4 text-white" href="">January 02,
+                                        2022</a></div>
+                                <div class="hover:text-[#59C378]" style="transition: all .5s;">
+                                    <p class="text-[1.5rem] mt-4 ">The standard chunk of used since
+                                    <p class=" text-[1.5rem]">the interested.</p>
+                                    </p>
+                                </div>
+                                <div class="detail hover:text-[#dfca08] flex justify-center "
+                                    style="transition: all .5s;"><a href="" class="mt-3 "><i
+                                            class="bi bi-arrow-right "></i> Post Details</a></div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button
+                            style="border:  solid #59C378 1px; transform: rotate(-45deg);position: absolute;top: 40%; ;"
+                            class="   glide__arrow glide__arrow--left rounded-[40%] p-4" data-glide-dir="<"><i
+                                class="bi bi-arrow-left text-[#59C378] "></i></button>
+                        <button
+                            style="border:  solid #59C378 1px;transform: rotate(-45deg);position: absolute;top: 40%; "
+                            class="glide__arrow glide__arrow--right rounded-[40%] p-4" data-glide-dir=">"><i
+                                class="bi bi-arrow-right text-[#59C378]"></i></button>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet bg-[#59C378] " data-glide-dir="=0"></button>
+                        <button class="glide__bullet bg-[#59C378]" data-glide-dir="=1"></button>
+                        <button class="glide__bullet bg-[#59C378]" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container8  bg-[#ff4155] mt-10 hidden md:flex md:justify-between px-20 py-16 md:items-center w-[90vw]"
+            style="z-index: 2;transform: translateY(40px);">
+            <p class="text-[2.5rem] text-white" style="font-weight: bold;">
+                Send me a message <br> and make something <br> together.
+            </p>
+            <a class="bg-[#202020] text-white px-8 rounded-[5px] py-3" href="
+            ">Contact US <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <footer class="bg-[#202020] mt-10 lg:mt-0 " style="z-index: 0;">
+            <div class="main-footer py-20 lg:py-28 px-5 md:px-14 lg:px-28 flex-col  lg:flex lg:flex-row lg:justify-between  ">
+                <div>
+                    <div class="flex items-center gap-3 ">
+                        <a href=""><img src="img/logo.png" class="w-16" alt=""></a>
+                        <a class="tag text-2xl xl:text-5xl text-white  " style="font-weight: bold;" href="">Elito.</a>
+
+                    </div>
+                    <p class="mt-3 text-white ">
+                        Welcome and open yourself to your truest <br> love this year with us! With the Release <br>
+                        Process
+                    </p>
+                    <div class="flex gap-3 mt-4">
+                        <i class="bi bi-facebook text-white hover:text-[#dfca08]" style="transition: all .5s;"></i>
+                        <i class="bi bi-twitter  text-white hover:text-[#dfca08]" style="transition: all .5s;"></i>
+                        <i class="bi bi-instagram  text-white hover:text-[#dfca08]" style="transition: all .5s;"></i>
+                        <i class="bi bi-pinterest  text-white hover:text-[#dfca08]" style="transition: all .5s;"></i>
+                        <i class="bi bi-vimeo  text-white hover:text-[#dfca08]" style="transition: all .5s;"></i>
+                    </div>
+                </div>
+
+                    <div class=" h-56 hidden lg:block" style="border:  solid .7px rgba(255, 255, 255, 0.05);">
+
+                    </div>
+                <div>
+                    <p class="text-white text-[1.5rem] mt-10 lg:mt-0">Navigation
+                    </p>
+                    <div class="flex mt-5  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>About Us</p>
+
+                    </div>
+                    <div class="flex mt-3 text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Contact Us</p>
+
+                    </div>
+                    <div class="flex mt-3  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Video Guide</p>
+
+                    </div>
+                    <div class="flex mt-3  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Recent Post</p>
+
+                    </div>
+                </div>
+                <div>
+                    <p class="text-white text-[1.5rem]  mt-10 lg:mt-0">All services
+                    </p>
+                    <div class="flex mt-5  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Web Design</p>
+
+                    </div>
+                    <div class="flex mt-3 text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Web Development</p>
+
+                    </div>
+                    <div class="flex mt-3  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Brand Identity</p>
+
+                    </div>
+                    <div class="flex mt-3  text-white">
+                        <p><i class="bi bi-dash"></i></p>
+                        <p>Digital Marketing</p>
+
+                    </div>
+                </div>
+              <div class="">
+                    <p class="text-white text-[1.5rem]  mt-10 lg:mt-0">Newsletter
+                    </p>
+                    <div class=" mt-5 hidden lg:block text-white">
+                        <p>Must explain to you how all this  </p>
+                        <p>
+                            mistaken idea pleasure born and give
+                        </p>
+                        <p>
+                            you a complete account.
+                        </p>
+                    </div>
+                    <p class="lg:hidden text-white">
+                        Must explain to you how all this mistaken idea pleasure born and give you a complete account.
+                    </p>
+                    <div style="width: 16rem;" class="bg-[#232925] 
+                    mt-6"><input class=" rounded-[5px]  bg-[#232925] px-4 py-3" type="text" placeholder="Email Address *"><i class="bi bi-envelope text-white text-[1.25rem]"></i></div>
+                   
+                </div>
+            </div>
+            
+            <div class="bottom-footer bg-[#232925] flex justify-center py-5" style="">
+                <div class="text-white">
+                    Copyright © 2022 Elito. All rights reserved.
+                </div>
+            </div>
+
+        </footer>
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: 'carousel',
+                perView: 3,
+                focusAt: 'center',
+                breakpoints: {
+                    800: {
+                        perView: 2
+                    },
+                    480: {
+                        perView: 1
+                    }
+                }
+            }
+            new Glide('#g1', config).mount()
+            new Glide('#g2', config).mount()
+
+
+            // const gl1 = new Glide('#g1')
+            // const gl2 = new Glide('#g2')
+
+            // gl1.mount();
+            // gl2.mount();
+
+
+        </script>
+        <script>
+
+            document.getElementById('body').addEventListener('wheel', function (e) {
+                setInterval(() => {
+                    document.getElementById('scroll').classList.remove('hidden')
+
+
+                }, 1000);
+
+            })
+            document.getElementById('scroll').addEventListener('click', () => window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            }));
+        </script>
+</body>
+
+</html>
