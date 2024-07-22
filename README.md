@@ -1,5 +1,5 @@
 # Project Title
-a single template project with html and and tailwind css.
+a single template project with html and tailwind css.
 
 ## Features
 responsive page with tailwind use flexbox and grid
