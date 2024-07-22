@@ -154,9 +154,7 @@ body{
             text-transform: capitalize;
             font-size: 1.15rem;
             position: relative;
-            // border-bottom: solid 4px #59C378;
-            // border-radius: 3px;
-            // line-height: 40px;
+           
     
             &::after{
                 content: '';
@@ -312,15 +310,3 @@ body{
     
 
 }
-// @media (max-width: 768px) { .main-footer
-//     {
-//         display: flex;
-//         flex-direction: column;
-
-// }
-//  }
-// .main-footer{
-//     display: flex;
-//     flex-direction: row;
-
-//  }

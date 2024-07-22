@@ -5,8 +5,12 @@ a single template project with html and tailwind css.
 responsive page with tailwind use flexbox and grid
 
 ## Demo
-![Screenshot 2023-12-28 135337](https://github.com/pooriaamini/SinglePageTemplate/assets/144540664/0fcc1d6f-55b5-47db-a1c4-5e10abec86d7)
 
+![alt text](img/demo1.png)
+
+![alt text](<img/demo 2.png>)
+
+![alt text](<img/demo 3.png>)
 
 ## Installation
-extract files and run index.html
+Extract files and run index.html
